@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <documentos>
+        <libro id="L4854" tipo_clase="novela" num_pags="568">
+            <titulo>Reina Roja</titulo>
+            <capitulo num_pags="42">
+                <titulo>Rey Blanco</titulo>
+                <contenido informacion="¿enlace?"></contenido>
+            </capitulo>
+            <capitulo num_pags="36">
+                <titulo>Cicatriz</titulo>
+                <contenido informacion="¿enlace?"></contenido>
+            </capitulo>
+            <capitulo num_pags="31">
+                <titulo>Espía de Dios</titulo>
+                <contenido informacion="¿enlace?"></contenido>
+            </capitulo>
+            <indice>Capitulo 1, capitulo 2, capitulo 3</indice>
+            <sinopsis>Antonia Scott es una mujer muy especial. Tiene un don que es al mismo tiempo una maldición: una extraordinaria inteligencia. Gracias a ella ha salvado decenas de vidas, pero también lo ha perdido todo. Hoy se parapeta contra el mundo en su piso casi vacío de Lavapiés, del que no piensa volver a salir. Ya no queda nada ahí fuera que le interese lo más mínimo.</sinopsis>
+
+           
+
+
+        </libro>
+
+        <revista id="R6458" tipo_clase="coches" num_pags="27">
+
+            <titulo>Todo Motor</titulo>
+            <numero_revista>5648</numero_revista>
+            <indice></indice>
+            <seccion num_pags="5">
+                <contenido informacion="¿enlace?"></contenido>
+            </seccion>
+            <seccion num_pags="3">
+                <contenido informacion="¿enlace?"></contenido>
+            </seccion>
+            <seccion num_pags="19">
+                <contenido informacion="¿enlace?"></contenido>
+            </seccion>
+
+        </revista>
+
+        <periodico id="P7432" tipo_clase="nacional" fecha_publicacion="12/05/2021">
+            
+            <seccion tipo="opinion">
+                <articulo autor="Roberto">
+                    <contenido informacion="¿enlace?"></contenido>
+                </articulo>
+                <articulo autor="Rafa">
+                    <contenido informacion="¿enlace?"></contenido>
+                </articulo>
+            </seccion>
+
+            <seccion tipo="economica">
+                <articulo autor="Alejandro">
+                    <contenido informacion="¿enlace?"></contenido>
+                </articulo>
+                <articulo autor="Jorge">
+                    <contenido informacion="¿enlace?"></contenido>
+                </articulo>
+            </seccion>
+
+            <indice>Seccion 1, Seccion 2, Seccion 3</indice>
+
+
+        </periodico>
+
+
+    </documentos>
+
+</biblioteca>
