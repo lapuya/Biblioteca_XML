@@ -1,0 +1,49 @@
+<!ELEMENT documentos (libro, revista, periodico)>
+
+<!ELEMENT libro (titulo, capitulo, indice, sinopsis)>
+
+<!ATTLIST libro id CDATA #REQUIRED>
+<!ATTLIST libro tipo_clase CDATA #REQUIRED>
+<!ATTLIST libro num_pags CDATA #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulo (titulo, contenido)>
+<!ATTLIST capitulo num_pags ID #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido informacion ID #REQUIRED>
+
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+
+
+<!ELEMENT revista (titulo, numero_revista, indice, seccion)>
+<!ATTLIST revista id CDATA #REQUIRED>
+<!ATTLIST revista tipo_clase CDATA #REQUIRED>
+<!ATTLIST revista num_pags ID #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT element-name (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT seccion (contenido)>
+<!ATTLIST seccion num_pags CDATA #REQUIRED>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido informacion ID #REQUIRED>
+
+
+<!ELEMENT periodico (seccion, indice)>
+<!ATTLIST periodico id CDATA #REQUIRED>
+<!ATTLIST periodico tipo_clase CDATA #REQUIRED>
+<!ATTLIST periodico fecha_publicación CDATA #REQUIRED>
+
+<!ELEMENT seccion (articulo)>
+<!ATTLIST seccion tipo CDATA #REQUIRED>
+
+<!ELEMENT articulo (contenido)>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido informacion ID #REQUIRED>
+
+<!ELEMENT indice (#PCDATA)>
