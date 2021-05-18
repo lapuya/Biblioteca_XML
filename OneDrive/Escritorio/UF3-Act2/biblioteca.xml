@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<biblioteca>
+    <documentos>
+        <libros id="L1111" tipo_clase="infantil">
+            <titulo_libro>Teo aprende a bailar</titulo_libro>
+            <capitulo_libro>Capitulo primero</capitulo_libro>
+            <titulo_capitulo>Primeros pasos</titulo_capitulo>
+            <numero_paginas_libro>74</numero_paginas_libro>
+            <contenido>Link contenido</contenido>
+            <indice_libro>
+            1. Primeros pasos......... pag. 25
+            2. Posiciones de baile.... pag. 37
+            3. Nivel medio............ pag. 46
+            4. Nivel avanzado......... pag. 59
+        </indice_libro>
+            <sinopsis>Con este libro ilustrativo, Teo aprende a bailar</sinopsis>
+        </libros>
+
+        <libros id="L1112" tipo_clase="novela">
+            <titulo_libro>La ciudad de vapor</titulo_libro>
+            <capitulo_libro>Capitulo primero</capitulo_libro>
+            <titulo_capitulo>Blanca y el adios</titulo_capitulo>
+            <numero_paginas_libro>457</numero_paginas_libro>
+            <contenido>Link contenido</contenido>
+            <indice_libro>
+            1. Blanca y el adiós.......... pag. 25
+            2. Sin nombre................. pag. 37
+            3. Una señorita de Barcelona.. pag. 46
+            4. Rosa de fuego.............. pag. 59
+        </indice_libro>
+            <sinopsis>
+        Carlos Ruiz Zafón concibió esta obra como un reconocimiento a sus lectores,
+        que le habían seguido a lo largo de la saga iniciada con La sombra del viento.
+        </sinopsis>
+        </libros>
+
+        <libros id="L1113" tipo_clase="didactico">
+            <titulo_libro>Aprende a programar Python</titulo_libro>
+            <capitulo_libro>Capitulo primero</capitulo_libro>
+            <titulo_capitulo>Introducción a programación</titulo_capitulo>
+            <numero_paginas_libro>246</numero_paginas_libro>
+            <contenido>Link contenido</contenido>
+            <indice_libro>
+                1. Introducción a programación.. pag. 25
+                2. Instalar Python.............. pag. 37
+                3. Introducción a IDLE.......... pag. 46
+                4. Variables.................... pag. 59
+            </indice_libro>
+            <sinopsis>
+            Python es un lenguaje de programación muy popular, facil de aprender
+            y ampliamente usado a nivel mundial en diversas áreas.
+            </sinopsis>
+        </libros>
+
+        <revistas id="R" tipo_clase="informatica">
+            <titulo_revista>Pc Computer</titulo_revista>
+            <numero_revista>Numero 1</numero_revista>
+            <indice_revista>
+            1. Tecnología
+            2. Gaming
+            3. Productos
+        </indice_revista>
+            <secciones>
+                <seccion>
+                    <num_paginas_seccion>18</num_paginas_seccion>
+                    <contenido>LINK contenido</contenido>
+                </seccion>
+            </secciones>
+        </revistas>
+
+        <revistas id="R" tipo_clase="investigacion">
+            <titulo_revista>Ensayos clínicos</titulo_revista>
+            <numero_revista>Numero 21</numero_revista>
+            <indice_revista>
+            1. Métodos
+            2. Resultados
+            3. Discusión
+        </indice_revista>
+            <secciones>
+                <seccion>
+                    <num_paginas_seccion>9</num_paginas_seccion>
+                    <contenido>LINK contenido</contenido>
+                </seccion>
+            </secciones>
+        </revistas>
+
+        <revistas id="R" tipo_clase="coches">
+            <titulo_revista>A todo gas</titulo_revista>
+            <numero_revista>Numero 288</numero_revista>
+            <indice_revista>
+                1. Superdeportivos
+                2. Nuevos compactos
+                3. Especificaciones técnicas
+         </indice_revista>
+            <secciones>
+                <seccion>
+                    <num_paginas_seccion>23</num_paginas_seccion>
+                    <contenido>LINK contenido</contenido>
+                </seccion>
+            </secciones>
+        </revistas>
+
+        <periodicos id="P2222" tipo_clase="nacionales" fecha_publicacion="22-04-2020">
+            <secciones_periodico tipo_seccion="economica">
+                <articulos autor="Pepe">
+                    <contenido>LINK CONTENIDO</contenido>
+                </articulos>
+            </secciones_periodico>
+            <indice_periodico></indice_periodico>
+        </periodicos>
+
+        <periodicos id="P2223" tipo_clase="internacionales" fecha_publicacion="29-11-2019">
+            <secciones_periodico tipo_seccion="opinion">
+                <articulos autor="Maria">
+                    <contenido>LINK contenido</contenido>
+                </articulos>
+            </secciones_periodico>
+            <indice_periodico></indice_periodico>
+        </periodicos>
+
+        <periodicos id="P2224" tipo_clase="nacionales" fecha_publicacion="15-03-2021">
+            <secciones_periodico tipo_seccion="nacional">
+                <articulos autor="Santiago">
+                    <contenido>LINK CONTENIDO</contenido>
+                </articulos>
+            </secciones_periodico>
+            <indice_periodico></indice_periodico>
+        </periodicos>
+    </documentos>
+</biblioteca>
