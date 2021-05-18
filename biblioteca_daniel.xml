@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Product SYSTEM "DTD_daniel.dtd">
 <biblioteca>
     <documentos>
         <libro id="L4854" tipo_clase="novela" num_pags="568">
@@ -29,13 +30,13 @@
             <numero_revista>5648</numero_revista>
             <indice></indice>
             <seccion num_pags="5">
-                <contenido informacion="¿enlace?"></contenido>
+                <contenido informacion="enlace"></contenido>
             </seccion>
             <seccion num_pags="3">
-                <contenido informacion="¿enlace?"></contenido>
+                <contenido informacion="enlace"></contenido>
             </seccion>
             <seccion num_pags="19">
-                <contenido informacion="¿enlace?"></contenido>
+                <contenido informacion="enlace"></contenido>
             </seccion>
 
         </revista>
@@ -44,19 +45,19 @@
             
             <seccion tipo="opinion">
                 <articulo autor="Roberto">
-                    <contenido informacion="¿enlace?"></contenido>
+                    <contenido informacion="enlace"></contenido>
                 </articulo>
                 <articulo autor="Rafa">
-                    <contenido informacion="¿enlace?"></contenido>
+                    <contenido informacion="enlace"></contenido>
                 </articulo>
             </seccion>
 
             <seccion tipo="economica">
                 <articulo autor="Alejandro">
-                    <contenido informacion="¿enlace?"></contenido>
+                    <contenido informacion="enlace"></contenido>
                 </articulo>
                 <articulo autor="Jorge">
-                    <contenido informacion="¿enlace?"></contenido>
+                    <contenido informacion="enlace"></contenido>
                 </articulo>
             </seccion>
 
