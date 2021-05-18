@@ -1,4 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+  <!ELEMENT biblioteca (documentos)>
+  <!ELEMENT documentos (libros, revistas, periodicos)>
+
+  <!ELEMENT libros (libro, libro, libro)>
+  <!ATTLIST libros id CDATA #REQUIRED>
+
+  <!ELEMENT libro (titulo_libro, capitulos, indice_libro, sinopsis, numero_paginas_libro)>
+  <!ATTLIST libro tipo_clase (novela|infantil|didactico) #REQUIRED>
+  <!ELEMENT titulo_libro (#PCDATA)>
+  <!ELEMENT capitulos (capitulo, capitulo, capitulo)>
+  <!ELEMENT capitulo (titulo_capitulo, numero_paginas_capitulo, contenido)>
+  <!ELEMENT titulo_capitulo (#PCDATA)>
+  <!ELEMENT numero_paginas_capitulo (#PCDATA)>
+  <!ELEMENT contenido (#PCDATA)>
+  <!ATTLIST capitulo_libro contenido CDATA "Link al contenido">
+  <!ELEMENT indice_libro (#PCDATA)>
+  <!ELEMENT sinopsis (#PCDATA)>
+  <!ELEMENT numero_paginas_libro (#PCDATA)>
+
+  <!ELEMENT revistas (revista, revista, revista, revista, revista)>
+  <!ATTLIST revistas id CDATA #REQUIRED>
+
+  <!ELEMENT revista (titulo_revista, numero, indice_revista, secciones, numero_paginas_revista)>
+  <!ATTLIST revista tipo_clase (informatica | corazon | coches | investigacion | otras) #REQUIRED>
+  <!ELEMENT titulo_revista (#PCDATA)>
+  <!ELEMENT numero (#PCDATA)>
+  <!ELEMENT indice_revista (#PCDATA)>
+  <!ELEMENT secciones (seccion, seccion)>
+  <!ELEMENT seccion (numero_paginas_seccion, contenido_revista)>
+  <!ELEMENT numero_paginas_seccion (#PCDATA)>
+  <!ELEMENT contenido_revista (#PCDATA)>
+  <!ATTLIST seccion contenido_revista CDATA "enlace info">
+  <!ELEMENT numero_paginas_revista (#PCDATA)>
+
+
+
+]>
 
 <biblioteca>
 
@@ -7,83 +45,89 @@
     <libros id="L1234">
       <!-- libro de novela -->
       <libro tipo_clase="novela">
-        <titulo>La primera novela</titulo>
+        <titulo_libro>La primera novela</titulo_libro>
         <capitulos>
           <capitulo>
             <titulo_capitulo>Primer capitulo</titulo_capitulo>
-            <numero_paginas>42</numero_paginas>
+            <numero_paginas_capitulo>42</numero_paginas_capitulo>
+            <contenido>Link al contenido</contenido>
           </capitulo>
           <capitulo>
             <titulo_capitulo>Segundo capitulo</titulo_capitulo>
-            <numero_paginas>32</numero_paginas>
+            <numero_paginas_capitulo>32</numero_paginas_capitulo>
+            <contenido>Link al contenido</contenido>
           </capitulo>
           <capitulo>
             <titulo_capitulo>Tercer capitulo</titulo_capitulo>
-            <numero_paginas>59</numero_paginas>
+            <numero_paginas_capitulo>59</numero_paginas_capitulo>
             <contenido>Link al contenido</contenido>
           </capitulo>
         </capitulos>
-        <indice>
+        <indice_libro>
         1. Introduccion
         2. Desarrollo
         3.Conclusion
-        </indice>
+        </indice_libro>
         <sinopsis>Este libro es una novela</sinopsis>
-        <numero_paginas>133</numero_paginas>
+        <numero_paginas_libro>133</numero_paginas_libro>
       </libro>
 
       <!-- libro infantil -->
       <libro tipo_clase="infantil">
-        <titulo>El libro infantil</titulo>
+        <titulo_libro>El libro infantil</titulo_libro>
         <capitulos>
           <capitulo>
             <titulo_capitulo>Primer capitulo</titulo_capitulo>
-            <numero_paginas>6</numero_paginas>
+            <numero_paginas_capitulo>6</numero_paginas_capitulo>
+            <contenido>Link al contenido</contenido>
           </capitulo>
           <capitulo>
             <titulo_capitulo>Segundo capitulo</titulo_capitulo>
-            <numero_paginas>12</numero_paginas>
+            <numero_paginas_capitulo>12</numero_paginas_capitulo>
+            <contenido>Link al contenido</contenido>
           </capitulo>
           <capitulo>
             <titulo_capitulo>Tercer capitulo</titulo_capitulo>
-            <numero_paginas>7</numero_paginas>
+            <numero_paginas_capitulo>7</numero_paginas_capitulo>
             <contenido>Link al contenido</contenido>
           </capitulo>
         </capitulos>
-        <indice>
+        <indice_libro>
         1. Introduccion
         2. Desarrollo
         3.Conclusion
-        </indice>
+        </indice_libro>
         <sinopsis>Este libro es un libro infantil</sinopsis>
-        <numero_paginas>25</numero_paginas>
+        <numero_paginas_libro>25</numero_paginas_libro>
       </libro>
 
       <!-- libro didactico -->
       <libro tipo_clase="didactico">
-        <titulo>Libro didactico</titulo>
+        <titulo_libro>Libro didactico</titulo_libro>
         <capitulos>
           <capitulo>
             <titulo_capitulo>Primer capitulo</titulo_capitulo>
-            <numero_paginas>40</numero_paginas>
+            <numero_paginas_capitulo>40</numero_paginas_capitulo>
+            <contenido>Link al contenido</contenido>
           </capitulo>
           <capitulo>
             <titulo_capitulo>Segundo capitulo</titulo_capitulo>
-            <numero_paginas>30</numero_paginas>
+            <numero_paginas_capitulo>30</numero_paginas_capitulo>
+            <contenido>Link al contenido</contenido>
           </capitulo>
           <capitulo>
             <titulo_capitulo>Tercer capitulo</titulo_capitulo>
-            <numero_paginas>20</numero_paginas>
+            <numero_paginas_capitulo>20</numero_paginas_capitulo>
             <contenido>Link al contenido</contenido>
           </capitulo>
         </capitulos>
-        <indice>
+        <indice_libro>
         1. Introduccion
         2. Desarrollo
         3. Conclusion
-        </indice>
+        </indice_libro>
         <sinopsis>Este libro es totalmente didactico </sinopsis>
-        <numero_paginas>90</numero_paginas>
+        <numero_paginas_libro>90</numero_paginas_libro>
       </libro>
     </libros>
 
@@ -91,112 +135,112 @@
     <revistas id="R">
       <!-- Ejemplo revista informatica -->
       <revista tipo_clase="informatica">
-        <titulo>Computer</titulo>
+        <titulo_revista>Computer</titulo_revista>
         <numero>23</numero>
-        <indice>
+        <indice_revista>
           1.Hardware
           2.Software
           3.Apple
           4.Microsoft
-        </indice>
+        </indice_revista>
         <secciones>
           <seccion>
-            <numero_paginas>12</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>12</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
           <seccion>
-            <numero_paginas>13</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>13</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
         </secciones>
-        <numero_paginas>25</numero_paginas>
+        <numero_paginas_revista>25</numero_paginas_revista>
       </revista>
 
       <!-- Ejemplo revista corazon -->
       <revista tipo_clase="corazon">
-        <titulo>Heart</titulo>
+        <titulo_revista>Heart</titulo_revista>
         <numero>214</numero>
-        <indice>
+        <indice_revista>
           1.Titulo uno
           2.Titulo dos
           3.Titulo tres
           4.Titulo cautro
-        </indice>
+        </indice_revista>
         <secciones>
           <seccion>
-            <numero_paginas>4</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>4</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
           <seccion>
-            <numero_paginas>2</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>2</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
         </secciones>
-        <numero_paginas>6</numero_paginas>
+        <numero_paginas_revista>6</numero_paginas_revista>
       </revista>
 
       <!-- Ejemplo revista coches -->
       <revista tipo_clase="coches">
-        <titulo>Cars</titulo>
+        <titulo_revista>Cars</titulo_revista>
         <numero>2</numero>
-        <indice>
+        <indice_revista>
           1.Tesla
           2.Peugeot
-        </indice>
+        </indice_revista>
         <secciones>
           <seccion>
-            <numero_paginas>6</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>6</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
           <seccion>
-            <numero_paginas>1</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>1</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
         </secciones>
-        <numero_paginas>7</numero_paginas>
+        <numero_paginas_revista>7</numero_paginas_revista>
       </revista>
 
       <!-- Ejemplo revista investigacion -->
       <revista tipo_clase="investigacion">
-        <titulo>Physics</titulo>
+        <titulo_revista>Physics</titulo_revista>
         <numero>5</numero>
-        <indice>
+        <indice_revista>
           1.Fisica
           2.Ingenieria
           3.Medicina
-        </indice>
+        </indice_revista>
         <secciones>
           <seccion>
-            <numero_paginas>5</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>5</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
           <seccion>
-            <numero_paginas>7</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>7</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
         </secciones>
-        <numero_paginas>12</numero_paginas>
+        <numero_paginas_revista>12</numero_paginas_revista>
       </revista>
 
       <!-- Ejemplo revista otras -->
       <revista tipo_clase="otras">
-        <titulo>The others</titulo>
+        <titulo_revista>The others</titulo_revista>
         <numero>9</numero>
-        <indice>
+        <indice_revista>
           1.Titulo uno
           2.Titulo dos
-        </indice>
+        </indice_revista>
         <secciones>
           <seccion>
-            <numero_paginas>3</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>3</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
           <seccion>
-            <numero_paginas>2</numero_paginas>
-            <contenido enlace="">enlace info</contenido>
+            <numero_paginas_seccion>2</numero_paginas_seccion>
+            <contenido_revista>enlace info</contenido_revista>
           </seccion>
         </secciones>
-        <numero_paginas>5</numero_paginas>
+        <numero_paginas_revista>5</numero_paginas_revista>
       </revista>
     </revistas>
 
