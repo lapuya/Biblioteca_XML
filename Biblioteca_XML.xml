@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "DTD.dtd">
+<biblioteca>
+    <documentos>
+        
+    
+    
+    <!-- Libro -->
+        <libro id="L1111" tipo_clase="didactico" pagina="288">
+            <titulo>Aprende Python desde 0</titulo>
+            <capitulos>
+                <capitulo pagina="7">
+                    <titulo_capitulo>Conceptos básicos</titulo_capitulo>
+                    <contenido url="https://google.es">Capitulo 1</contenido>
+                </capitulo>
+                <capitulo pagina="21">
+                    <titulo_capitulo>Datos</titulo_capitulo>
+                    <contenido url="https://google.es">Capitulo 2</contenido>
+                </capitulo>
+            </capitulos>
+            <indice>
+                1. Conceptos basicos
+                2. Datos
+                3. Programación avanzada
+            </indice>
+            <sinopsis>
+                Con este curso aprenderás a programar Python desde 0
+            </sinopsis>
+        </libro>
+
+    <!-- Revista -->
+        <revista id="R6458" tipo_clase="coches" pagina="27">
+            <titulo>Mucho Motor</titulo>
+            <numero_revista>5648</numero_revista>
+            <indice>
+                1. Híbridos
+                2. Gasolina
+                3. Diesel
+            </indice>
+            <seccion pagina="5">
+                <contenido url="enlace">Híbridos</contenido>
+            </seccion>
+            <seccion pagina="3">
+                <contenido url="enlace">Gasolina</contenido>
+            </seccion>
+            <seccion pagina="19">
+                <contenido url="enlace">Diesel</contenido>
+            </seccion>
+        </revista>
+    <!-- Periodico -->
+        <periodico id="P7432" tipo_clase="nacional" fecha_publicacion="12/05/2021">
+            <seccion tipo="opinion">
+                <articulo autor="Roberto">
+                    <contenido informacion="enlace"></contenido>
+                </articulo>
+                <articulo autor="Rafa">
+                    <contenido informacion="enlace"></contenido>
+                </articulo>
+            </seccion>
+    
+            <seccion tipo="economica">
+                <articulo autor="Alejandro">
+                    <contenido informacion="enlace"></contenido>
+                </articulo>
+                <articulo autor="Jorge">
+                    <contenido informacion="enlace"></contenido>
+                </articulo>
+            </seccion>
+            <indice>
+             1. Opinion 
+                1.1 Artículo 1
+                1.2 Artículo 2
+             2. Economica			
+            </indice>
+        </periodico>
+    </documentos>
+</biblioteca>
